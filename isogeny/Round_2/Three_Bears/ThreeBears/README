@@ -1,0 +1,480 @@
+
+###### Package description ######
+# This is the submission package for ThreeBears family of postquantum KEMs.
+# The implemented KEMs are:
+#    BabyBearEphem BabyBear MamaBearEphem MamaBear PapaBearEphem PapaBear
+# 
+# The code in this package implements both CPA-secure and CCA-secure KEM
+# variants.
+# 
+# Author: Michael Hamburg (Rambus Cryptography Products Group)
+# Copyright 2017-2019 Rambus, Inc.
+
+###### Files: ######
+README: This file
+
+Supporting_Documentation/documentation.pdf: Documentation for submission.
+Supporting_Documentation/proof.pdf: Proof of security.
+Supporting_Documentation/failure.pdf: Failure analysis.
+
+###### Generic Python implementation for all bears: ######
+Additional_Implementations/Python/crypto_kem/threebears/Keccak.py: Keccak, SHA and cSHAKE
+Additional_Implementations/Python/crypto_kem/threebears/Fec.py: Forward error correction (FEC)
+Additional_Implementations/Python/crypto_kem/threebears/ThreeBears.py: ThreeBears
+
+###### Files relating to the "BabyBearEphem" CPA-secure KEM: ######
+Reference_Implementation_Implementation/crypto_kem/BabyBearEphem/*: Reference implementation of BabyBearEphem
+Reference_Implementation/crypto_kem/BabyBearEphem/api.h: Required API header
+Reference_Implementation/crypto_kem/BabyBearEphem/kem.c: Shims to match api.h to internal API
+Reference_Implementation/crypto_kem/BabyBearEphem/params.h: System parameters header
+Reference_Implementation/crypto_kem/BabyBearEphem/common.h: Common include header
+Reference_Implementation/crypto_kem/BabyBearEphem/ring.h: Ring arithmetic header
+Reference_Implementation/crypto_kem/BabyBearEphem/ring.c: Ring arithmetic
+Reference_Implementation/crypto_kem/BabyBearEphem/shake.h: cSHAKE header
+Reference_Implementation/crypto_kem/BabyBearEphem/shake.c: cSHAKE
+Reference_Implementation/crypto_kem/BabyBearEphem/melas_fec.h: Melas FEC header
+Reference_Implementation/crypto_kem/BabyBearEphem/melas_fec.c: Melas FEC
+Reference_Implementation/crypto_kem/BabyBearEphem/threebears.h: Main implementation header
+Reference_Implementation/crypto_kem/BabyBearEphem/threebears.c: Main implementation file
+Reference_Implementation/crypto_kem/BabyBearEphem/Makefile: Makefile for KAT
+Reference_Implementation/crypto_kem/BabyBearEphem/NIST/rng.h: NIST's random number generator header
+Reference_Implementation/crypto_kem/BabyBearEphem/NIST/rng.c: NIST's random number generator impl
+Reference_Implementation/crypto_kem/BabyBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Optimized_Implementation_Implementation/crypto_kem/BabyBearEphem/*: Optimized implementation of BabyBearEphem
+Optimized_Implementation/crypto_kem/BabyBearEphem/api.h: Required API header
+Optimized_Implementation/crypto_kem/BabyBearEphem/kem.c: Shims to match api.h to internal API
+Optimized_Implementation/crypto_kem/BabyBearEphem/params.h: System parameters header
+Optimized_Implementation/crypto_kem/BabyBearEphem/common.h: Common include header
+Optimized_Implementation/crypto_kem/BabyBearEphem/ring.h: Ring arithmetic header
+Optimized_Implementation/crypto_kem/BabyBearEphem/ring.c: Ring arithmetic
+Optimized_Implementation/crypto_kem/BabyBearEphem/shake.h: cSHAKE header
+Optimized_Implementation/crypto_kem/BabyBearEphem/shake.c: cSHAKE
+Optimized_Implementation/crypto_kem/BabyBearEphem/melas_fec.h: Melas FEC header
+Optimized_Implementation/crypto_kem/BabyBearEphem/melas_fec.c: Melas FEC
+Optimized_Implementation/crypto_kem/BabyBearEphem/threebears.h: Main implementation header
+Optimized_Implementation/crypto_kem/BabyBearEphem/threebears.c: Main implementation file
+Optimized_Implementation/crypto_kem/BabyBearEphem/Makefile: Makefile for KAT
+Optimized_Implementation/crypto_kem/BabyBearEphem/NIST/rng.h: NIST's random number generator header
+Optimized_Implementation/crypto_kem/BabyBearEphem/NIST/rng.c: NIST's random number generator impl
+Optimized_Implementation/crypto_kem/BabyBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/With_Asm_Implementation/crypto_kem/BabyBearEphem/*: Assembly-optimized implementation of BabyBearEphem
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/api.h: Required API header
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/kem.c: Shims to match api.h to internal API
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/params.h: System parameters header
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/common.h: Common include header
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/ring.h: Ring arithmetic header
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/ring.c: Ring arithmetic
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/shake.h: cSHAKE header
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/shake.c: cSHAKE
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/melas_fec.h: Melas FEC header
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/melas_fec.c: Melas FEC
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/threebears.h: Main implementation header
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/threebears.c: Main implementation file
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/Makefile: Makefile for KAT
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/With_Asm/crypto_kem/BabyBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/Low_Memory_Implementation/crypto_kem/BabyBearEphem/*: Low-memory implementation of BabyBearEphem
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/api.h: Required API header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/kem.c: Shims to match api.h to internal API
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/params.h: System parameters header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/common.h: Common include header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/ring.h: Ring arithmetic header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/ring.c: Ring arithmetic
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/shake.h: cSHAKE header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/shake.c: cSHAKE
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/melas_fec.h: Melas FEC header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/melas_fec.c: Melas FEC
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/threebears.h: Main implementation header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/threebears.c: Main implementation file
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/Makefile: Makefile for KAT
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/Low_Memory/crypto_kem/BabyBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+KAT/crypto_kem/BabyBearEphem/PQCkemKAT_40.req: KEM requests
+KAT/crypto_kem/BabyBearEphem/PQCkemKAT_40.rsp: KEM responses
+
+###### Files relating to the "BabyBear" CCA-secure KEM: ######
+Reference_Implementation_Implementation/crypto_kem/BabyBear/*: Reference implementation of BabyBear
+Reference_Implementation/crypto_kem/BabyBear/api.h: Required API header
+Reference_Implementation/crypto_kem/BabyBear/kem.c: Shims to match api.h to internal API
+Reference_Implementation/crypto_kem/BabyBear/params.h: System parameters header
+Reference_Implementation/crypto_kem/BabyBear/common.h: Common include header
+Reference_Implementation/crypto_kem/BabyBear/ring.h: Ring arithmetic header
+Reference_Implementation/crypto_kem/BabyBear/ring.c: Ring arithmetic
+Reference_Implementation/crypto_kem/BabyBear/shake.h: cSHAKE header
+Reference_Implementation/crypto_kem/BabyBear/shake.c: cSHAKE
+Reference_Implementation/crypto_kem/BabyBear/melas_fec.h: Melas FEC header
+Reference_Implementation/crypto_kem/BabyBear/melas_fec.c: Melas FEC
+Reference_Implementation/crypto_kem/BabyBear/threebears.h: Main implementation header
+Reference_Implementation/crypto_kem/BabyBear/threebears.c: Main implementation file
+Reference_Implementation/crypto_kem/BabyBear/Makefile: Makefile for KAT
+Reference_Implementation/crypto_kem/BabyBear/NIST/rng.h: NIST's random number generator header
+Reference_Implementation/crypto_kem/BabyBear/NIST/rng.c: NIST's random number generator impl
+Reference_Implementation/crypto_kem/BabyBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Optimized_Implementation_Implementation/crypto_kem/BabyBear/*: Optimized implementation of BabyBear
+Optimized_Implementation/crypto_kem/BabyBear/api.h: Required API header
+Optimized_Implementation/crypto_kem/BabyBear/kem.c: Shims to match api.h to internal API
+Optimized_Implementation/crypto_kem/BabyBear/params.h: System parameters header
+Optimized_Implementation/crypto_kem/BabyBear/common.h: Common include header
+Optimized_Implementation/crypto_kem/BabyBear/ring.h: Ring arithmetic header
+Optimized_Implementation/crypto_kem/BabyBear/ring.c: Ring arithmetic
+Optimized_Implementation/crypto_kem/BabyBear/shake.h: cSHAKE header
+Optimized_Implementation/crypto_kem/BabyBear/shake.c: cSHAKE
+Optimized_Implementation/crypto_kem/BabyBear/melas_fec.h: Melas FEC header
+Optimized_Implementation/crypto_kem/BabyBear/melas_fec.c: Melas FEC
+Optimized_Implementation/crypto_kem/BabyBear/threebears.h: Main implementation header
+Optimized_Implementation/crypto_kem/BabyBear/threebears.c: Main implementation file
+Optimized_Implementation/crypto_kem/BabyBear/Makefile: Makefile for KAT
+Optimized_Implementation/crypto_kem/BabyBear/NIST/rng.h: NIST's random number generator header
+Optimized_Implementation/crypto_kem/BabyBear/NIST/rng.c: NIST's random number generator impl
+Optimized_Implementation/crypto_kem/BabyBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/With_Asm_Implementation/crypto_kem/BabyBear/*: Assembly-optimized implementation of BabyBear
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/api.h: Required API header
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/kem.c: Shims to match api.h to internal API
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/params.h: System parameters header
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/common.h: Common include header
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/ring.h: Ring arithmetic header
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/ring.c: Ring arithmetic
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/shake.h: cSHAKE header
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/shake.c: cSHAKE
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/melas_fec.h: Melas FEC header
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/melas_fec.c: Melas FEC
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/threebears.h: Main implementation header
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/threebears.c: Main implementation file
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/Makefile: Makefile for KAT
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/With_Asm/crypto_kem/BabyBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/Low_Memory_Implementation/crypto_kem/BabyBear/*: Low-memory implementation of BabyBear
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/api.h: Required API header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/kem.c: Shims to match api.h to internal API
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/params.h: System parameters header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/common.h: Common include header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/ring.h: Ring arithmetic header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/ring.c: Ring arithmetic
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/shake.h: cSHAKE header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/shake.c: cSHAKE
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/melas_fec.h: Melas FEC header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/melas_fec.c: Melas FEC
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/threebears.h: Main implementation header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/threebears.c: Main implementation file
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/Makefile: Makefile for KAT
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/Low_Memory/crypto_kem/BabyBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+KAT/crypto_kem/BabyBear/PQCkemKAT_40.req: KEM requests
+KAT/crypto_kem/BabyBear/PQCkemKAT_40.rsp: KEM responses
+
+###### Files relating to the "MamaBearEphem" CPA-secure KEM: ######
+Reference_Implementation_Implementation/crypto_kem/MamaBearEphem/*: Reference implementation of MamaBearEphem
+Reference_Implementation/crypto_kem/MamaBearEphem/api.h: Required API header
+Reference_Implementation/crypto_kem/MamaBearEphem/kem.c: Shims to match api.h to internal API
+Reference_Implementation/crypto_kem/MamaBearEphem/params.h: System parameters header
+Reference_Implementation/crypto_kem/MamaBearEphem/common.h: Common include header
+Reference_Implementation/crypto_kem/MamaBearEphem/ring.h: Ring arithmetic header
+Reference_Implementation/crypto_kem/MamaBearEphem/ring.c: Ring arithmetic
+Reference_Implementation/crypto_kem/MamaBearEphem/shake.h: cSHAKE header
+Reference_Implementation/crypto_kem/MamaBearEphem/shake.c: cSHAKE
+Reference_Implementation/crypto_kem/MamaBearEphem/melas_fec.h: Melas FEC header
+Reference_Implementation/crypto_kem/MamaBearEphem/melas_fec.c: Melas FEC
+Reference_Implementation/crypto_kem/MamaBearEphem/threebears.h: Main implementation header
+Reference_Implementation/crypto_kem/MamaBearEphem/threebears.c: Main implementation file
+Reference_Implementation/crypto_kem/MamaBearEphem/Makefile: Makefile for KAT
+Reference_Implementation/crypto_kem/MamaBearEphem/NIST/rng.h: NIST's random number generator header
+Reference_Implementation/crypto_kem/MamaBearEphem/NIST/rng.c: NIST's random number generator impl
+Reference_Implementation/crypto_kem/MamaBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Optimized_Implementation_Implementation/crypto_kem/MamaBearEphem/*: Optimized implementation of MamaBearEphem
+Optimized_Implementation/crypto_kem/MamaBearEphem/api.h: Required API header
+Optimized_Implementation/crypto_kem/MamaBearEphem/kem.c: Shims to match api.h to internal API
+Optimized_Implementation/crypto_kem/MamaBearEphem/params.h: System parameters header
+Optimized_Implementation/crypto_kem/MamaBearEphem/common.h: Common include header
+Optimized_Implementation/crypto_kem/MamaBearEphem/ring.h: Ring arithmetic header
+Optimized_Implementation/crypto_kem/MamaBearEphem/ring.c: Ring arithmetic
+Optimized_Implementation/crypto_kem/MamaBearEphem/shake.h: cSHAKE header
+Optimized_Implementation/crypto_kem/MamaBearEphem/shake.c: cSHAKE
+Optimized_Implementation/crypto_kem/MamaBearEphem/melas_fec.h: Melas FEC header
+Optimized_Implementation/crypto_kem/MamaBearEphem/melas_fec.c: Melas FEC
+Optimized_Implementation/crypto_kem/MamaBearEphem/threebears.h: Main implementation header
+Optimized_Implementation/crypto_kem/MamaBearEphem/threebears.c: Main implementation file
+Optimized_Implementation/crypto_kem/MamaBearEphem/Makefile: Makefile for KAT
+Optimized_Implementation/crypto_kem/MamaBearEphem/NIST/rng.h: NIST's random number generator header
+Optimized_Implementation/crypto_kem/MamaBearEphem/NIST/rng.c: NIST's random number generator impl
+Optimized_Implementation/crypto_kem/MamaBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/With_Asm_Implementation/crypto_kem/MamaBearEphem/*: Assembly-optimized implementation of MamaBearEphem
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/api.h: Required API header
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/kem.c: Shims to match api.h to internal API
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/params.h: System parameters header
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/common.h: Common include header
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/ring.h: Ring arithmetic header
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/ring.c: Ring arithmetic
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/shake.h: cSHAKE header
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/shake.c: cSHAKE
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/melas_fec.h: Melas FEC header
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/melas_fec.c: Melas FEC
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/threebears.h: Main implementation header
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/threebears.c: Main implementation file
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/Makefile: Makefile for KAT
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/With_Asm/crypto_kem/MamaBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/Low_Memory_Implementation/crypto_kem/MamaBearEphem/*: Low-memory implementation of MamaBearEphem
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/api.h: Required API header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/kem.c: Shims to match api.h to internal API
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/params.h: System parameters header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/common.h: Common include header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/ring.h: Ring arithmetic header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/ring.c: Ring arithmetic
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/shake.h: cSHAKE header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/shake.c: cSHAKE
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/melas_fec.h: Melas FEC header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/melas_fec.c: Melas FEC
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/threebears.h: Main implementation header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/threebears.c: Main implementation file
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/Makefile: Makefile for KAT
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/Low_Memory/crypto_kem/MamaBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+KAT/crypto_kem/MamaBearEphem/PQCkemKAT_40.req: KEM requests
+KAT/crypto_kem/MamaBearEphem/PQCkemKAT_40.rsp: KEM responses
+
+###### Files relating to the "MamaBear" CCA-secure KEM: ######
+Reference_Implementation_Implementation/crypto_kem/MamaBear/*: Reference implementation of MamaBear
+Reference_Implementation/crypto_kem/MamaBear/api.h: Required API header
+Reference_Implementation/crypto_kem/MamaBear/kem.c: Shims to match api.h to internal API
+Reference_Implementation/crypto_kem/MamaBear/params.h: System parameters header
+Reference_Implementation/crypto_kem/MamaBear/common.h: Common include header
+Reference_Implementation/crypto_kem/MamaBear/ring.h: Ring arithmetic header
+Reference_Implementation/crypto_kem/MamaBear/ring.c: Ring arithmetic
+Reference_Implementation/crypto_kem/MamaBear/shake.h: cSHAKE header
+Reference_Implementation/crypto_kem/MamaBear/shake.c: cSHAKE
+Reference_Implementation/crypto_kem/MamaBear/melas_fec.h: Melas FEC header
+Reference_Implementation/crypto_kem/MamaBear/melas_fec.c: Melas FEC
+Reference_Implementation/crypto_kem/MamaBear/threebears.h: Main implementation header
+Reference_Implementation/crypto_kem/MamaBear/threebears.c: Main implementation file
+Reference_Implementation/crypto_kem/MamaBear/Makefile: Makefile for KAT
+Reference_Implementation/crypto_kem/MamaBear/NIST/rng.h: NIST's random number generator header
+Reference_Implementation/crypto_kem/MamaBear/NIST/rng.c: NIST's random number generator impl
+Reference_Implementation/crypto_kem/MamaBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Optimized_Implementation_Implementation/crypto_kem/MamaBear/*: Optimized implementation of MamaBear
+Optimized_Implementation/crypto_kem/MamaBear/api.h: Required API header
+Optimized_Implementation/crypto_kem/MamaBear/kem.c: Shims to match api.h to internal API
+Optimized_Implementation/crypto_kem/MamaBear/params.h: System parameters header
+Optimized_Implementation/crypto_kem/MamaBear/common.h: Common include header
+Optimized_Implementation/crypto_kem/MamaBear/ring.h: Ring arithmetic header
+Optimized_Implementation/crypto_kem/MamaBear/ring.c: Ring arithmetic
+Optimized_Implementation/crypto_kem/MamaBear/shake.h: cSHAKE header
+Optimized_Implementation/crypto_kem/MamaBear/shake.c: cSHAKE
+Optimized_Implementation/crypto_kem/MamaBear/melas_fec.h: Melas FEC header
+Optimized_Implementation/crypto_kem/MamaBear/melas_fec.c: Melas FEC
+Optimized_Implementation/crypto_kem/MamaBear/threebears.h: Main implementation header
+Optimized_Implementation/crypto_kem/MamaBear/threebears.c: Main implementation file
+Optimized_Implementation/crypto_kem/MamaBear/Makefile: Makefile for KAT
+Optimized_Implementation/crypto_kem/MamaBear/NIST/rng.h: NIST's random number generator header
+Optimized_Implementation/crypto_kem/MamaBear/NIST/rng.c: NIST's random number generator impl
+Optimized_Implementation/crypto_kem/MamaBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/With_Asm_Implementation/crypto_kem/MamaBear/*: Assembly-optimized implementation of MamaBear
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/api.h: Required API header
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/kem.c: Shims to match api.h to internal API
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/params.h: System parameters header
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/common.h: Common include header
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/ring.h: Ring arithmetic header
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/ring.c: Ring arithmetic
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/shake.h: cSHAKE header
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/shake.c: cSHAKE
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/melas_fec.h: Melas FEC header
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/melas_fec.c: Melas FEC
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/threebears.h: Main implementation header
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/threebears.c: Main implementation file
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/Makefile: Makefile for KAT
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/With_Asm/crypto_kem/MamaBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/Low_Memory_Implementation/crypto_kem/MamaBear/*: Low-memory implementation of MamaBear
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/api.h: Required API header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/kem.c: Shims to match api.h to internal API
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/params.h: System parameters header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/common.h: Common include header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/ring.h: Ring arithmetic header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/ring.c: Ring arithmetic
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/shake.h: cSHAKE header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/shake.c: cSHAKE
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/melas_fec.h: Melas FEC header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/melas_fec.c: Melas FEC
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/threebears.h: Main implementation header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/threebears.c: Main implementation file
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/Makefile: Makefile for KAT
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/Low_Memory/crypto_kem/MamaBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+KAT/crypto_kem/MamaBear/PQCkemKAT_40.req: KEM requests
+KAT/crypto_kem/MamaBear/PQCkemKAT_40.rsp: KEM responses
+
+###### Files relating to the "PapaBearEphem" CPA-secure KEM: ######
+Reference_Implementation_Implementation/crypto_kem/PapaBearEphem/*: Reference implementation of PapaBearEphem
+Reference_Implementation/crypto_kem/PapaBearEphem/api.h: Required API header
+Reference_Implementation/crypto_kem/PapaBearEphem/kem.c: Shims to match api.h to internal API
+Reference_Implementation/crypto_kem/PapaBearEphem/params.h: System parameters header
+Reference_Implementation/crypto_kem/PapaBearEphem/common.h: Common include header
+Reference_Implementation/crypto_kem/PapaBearEphem/ring.h: Ring arithmetic header
+Reference_Implementation/crypto_kem/PapaBearEphem/ring.c: Ring arithmetic
+Reference_Implementation/crypto_kem/PapaBearEphem/shake.h: cSHAKE header
+Reference_Implementation/crypto_kem/PapaBearEphem/shake.c: cSHAKE
+Reference_Implementation/crypto_kem/PapaBearEphem/melas_fec.h: Melas FEC header
+Reference_Implementation/crypto_kem/PapaBearEphem/melas_fec.c: Melas FEC
+Reference_Implementation/crypto_kem/PapaBearEphem/threebears.h: Main implementation header
+Reference_Implementation/crypto_kem/PapaBearEphem/threebears.c: Main implementation file
+Reference_Implementation/crypto_kem/PapaBearEphem/Makefile: Makefile for KAT
+Reference_Implementation/crypto_kem/PapaBearEphem/NIST/rng.h: NIST's random number generator header
+Reference_Implementation/crypto_kem/PapaBearEphem/NIST/rng.c: NIST's random number generator impl
+Reference_Implementation/crypto_kem/PapaBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Optimized_Implementation_Implementation/crypto_kem/PapaBearEphem/*: Optimized implementation of PapaBearEphem
+Optimized_Implementation/crypto_kem/PapaBearEphem/api.h: Required API header
+Optimized_Implementation/crypto_kem/PapaBearEphem/kem.c: Shims to match api.h to internal API
+Optimized_Implementation/crypto_kem/PapaBearEphem/params.h: System parameters header
+Optimized_Implementation/crypto_kem/PapaBearEphem/common.h: Common include header
+Optimized_Implementation/crypto_kem/PapaBearEphem/ring.h: Ring arithmetic header
+Optimized_Implementation/crypto_kem/PapaBearEphem/ring.c: Ring arithmetic
+Optimized_Implementation/crypto_kem/PapaBearEphem/shake.h: cSHAKE header
+Optimized_Implementation/crypto_kem/PapaBearEphem/shake.c: cSHAKE
+Optimized_Implementation/crypto_kem/PapaBearEphem/melas_fec.h: Melas FEC header
+Optimized_Implementation/crypto_kem/PapaBearEphem/melas_fec.c: Melas FEC
+Optimized_Implementation/crypto_kem/PapaBearEphem/threebears.h: Main implementation header
+Optimized_Implementation/crypto_kem/PapaBearEphem/threebears.c: Main implementation file
+Optimized_Implementation/crypto_kem/PapaBearEphem/Makefile: Makefile for KAT
+Optimized_Implementation/crypto_kem/PapaBearEphem/NIST/rng.h: NIST's random number generator header
+Optimized_Implementation/crypto_kem/PapaBearEphem/NIST/rng.c: NIST's random number generator impl
+Optimized_Implementation/crypto_kem/PapaBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/With_Asm_Implementation/crypto_kem/PapaBearEphem/*: Assembly-optimized implementation of PapaBearEphem
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/api.h: Required API header
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/kem.c: Shims to match api.h to internal API
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/params.h: System parameters header
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/common.h: Common include header
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/ring.h: Ring arithmetic header
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/ring.c: Ring arithmetic
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/shake.h: cSHAKE header
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/shake.c: cSHAKE
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/melas_fec.h: Melas FEC header
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/melas_fec.c: Melas FEC
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/threebears.h: Main implementation header
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/threebears.c: Main implementation file
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/Makefile: Makefile for KAT
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/With_Asm/crypto_kem/PapaBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/Low_Memory_Implementation/crypto_kem/PapaBearEphem/*: Low-memory implementation of PapaBearEphem
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/api.h: Required API header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/kem.c: Shims to match api.h to internal API
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/params.h: System parameters header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/common.h: Common include header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/ring.h: Ring arithmetic header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/ring.c: Ring arithmetic
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/shake.h: cSHAKE header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/shake.c: cSHAKE
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/melas_fec.h: Melas FEC header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/melas_fec.c: Melas FEC
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/threebears.h: Main implementation header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/threebears.c: Main implementation file
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/Makefile: Makefile for KAT
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/Low_Memory/crypto_kem/PapaBearEphem/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+KAT/crypto_kem/PapaBearEphem/PQCkemKAT_40.req: KEM requests
+KAT/crypto_kem/PapaBearEphem/PQCkemKAT_40.rsp: KEM responses
+
+###### Files relating to the "PapaBear" CCA-secure KEM: ######
+Reference_Implementation_Implementation/crypto_kem/PapaBear/*: Reference implementation of PapaBear
+Reference_Implementation/crypto_kem/PapaBear/api.h: Required API header
+Reference_Implementation/crypto_kem/PapaBear/kem.c: Shims to match api.h to internal API
+Reference_Implementation/crypto_kem/PapaBear/params.h: System parameters header
+Reference_Implementation/crypto_kem/PapaBear/common.h: Common include header
+Reference_Implementation/crypto_kem/PapaBear/ring.h: Ring arithmetic header
+Reference_Implementation/crypto_kem/PapaBear/ring.c: Ring arithmetic
+Reference_Implementation/crypto_kem/PapaBear/shake.h: cSHAKE header
+Reference_Implementation/crypto_kem/PapaBear/shake.c: cSHAKE
+Reference_Implementation/crypto_kem/PapaBear/melas_fec.h: Melas FEC header
+Reference_Implementation/crypto_kem/PapaBear/melas_fec.c: Melas FEC
+Reference_Implementation/crypto_kem/PapaBear/threebears.h: Main implementation header
+Reference_Implementation/crypto_kem/PapaBear/threebears.c: Main implementation file
+Reference_Implementation/crypto_kem/PapaBear/Makefile: Makefile for KAT
+Reference_Implementation/crypto_kem/PapaBear/NIST/rng.h: NIST's random number generator header
+Reference_Implementation/crypto_kem/PapaBear/NIST/rng.c: NIST's random number generator impl
+Reference_Implementation/crypto_kem/PapaBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Optimized_Implementation_Implementation/crypto_kem/PapaBear/*: Optimized implementation of PapaBear
+Optimized_Implementation/crypto_kem/PapaBear/api.h: Required API header
+Optimized_Implementation/crypto_kem/PapaBear/kem.c: Shims to match api.h to internal API
+Optimized_Implementation/crypto_kem/PapaBear/params.h: System parameters header
+Optimized_Implementation/crypto_kem/PapaBear/common.h: Common include header
+Optimized_Implementation/crypto_kem/PapaBear/ring.h: Ring arithmetic header
+Optimized_Implementation/crypto_kem/PapaBear/ring.c: Ring arithmetic
+Optimized_Implementation/crypto_kem/PapaBear/shake.h: cSHAKE header
+Optimized_Implementation/crypto_kem/PapaBear/shake.c: cSHAKE
+Optimized_Implementation/crypto_kem/PapaBear/melas_fec.h: Melas FEC header
+Optimized_Implementation/crypto_kem/PapaBear/melas_fec.c: Melas FEC
+Optimized_Implementation/crypto_kem/PapaBear/threebears.h: Main implementation header
+Optimized_Implementation/crypto_kem/PapaBear/threebears.c: Main implementation file
+Optimized_Implementation/crypto_kem/PapaBear/Makefile: Makefile for KAT
+Optimized_Implementation/crypto_kem/PapaBear/NIST/rng.h: NIST's random number generator header
+Optimized_Implementation/crypto_kem/PapaBear/NIST/rng.c: NIST's random number generator impl
+Optimized_Implementation/crypto_kem/PapaBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/With_Asm_Implementation/crypto_kem/PapaBear/*: Assembly-optimized implementation of PapaBear
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/api.h: Required API header
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/kem.c: Shims to match api.h to internal API
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/params.h: System parameters header
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/common.h: Common include header
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/ring.h: Ring arithmetic header
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/ring.c: Ring arithmetic
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/shake.h: cSHAKE header
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/shake.c: cSHAKE
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/melas_fec.h: Melas FEC header
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/melas_fec.c: Melas FEC
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/threebears.h: Main implementation header
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/threebears.c: Main implementation file
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/Makefile: Makefile for KAT
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/With_Asm/crypto_kem/PapaBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+Additional_Implementations/Low_Memory_Implementation/crypto_kem/PapaBear/*: Low-memory implementation of PapaBear
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/api.h: Required API header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/kem.c: Shims to match api.h to internal API
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/params.h: System parameters header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/common.h: Common include header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/ring.h: Ring arithmetic header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/ring.c: Ring arithmetic
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/shake.h: cSHAKE header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/shake.c: cSHAKE
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/melas_fec.h: Melas FEC header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/melas_fec.c: Melas FEC
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/threebears.h: Main implementation header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/threebears.c: Main implementation file
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/Makefile: Makefile for KAT
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/NIST/rng.h: NIST's random number generator header
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/NIST/rng.c: NIST's random number generator impl
+Additional_Implementations/Low_Memory/crypto_kem/PapaBear/NIST/PQCgenKAT_kem.c: NIST's known-answer test generator
+
+KAT/crypto_kem/PapaBear/PQCkemKAT_40.req: KEM requests
+KAT/crypto_kem/PapaBear/PQCkemKAT_40.rsp: KEM responses
+
