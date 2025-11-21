@@ -1,0 +1,797 @@
+./Additional_Implementation/Titanium_CCA_toy_AVX2/api.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/kem.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/keccak.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/PQCgenKAT_kem.c: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/encrypt.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/sampler.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/littleendian.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/ntt.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/Makefile: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/sampler.c: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/kem.c: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/encrypt.c: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/rng.c: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/param.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/pack.c: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/pack.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/rng.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/ntt.c: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_toy_AVX2/fastmodulo.h: Part of the AVX2 Titanium CCA Toy64 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/api.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/kem.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/keccak.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/PQCgenKAT_kem.c: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/encrypt.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/sampler.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/littleendian.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/ntt.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/Makefile: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/sampler.c: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/kem.c: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/encrypt.c: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/rng.c: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/param.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/pack.c: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/pack.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/rng.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/ntt.c: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CCA_std_AVX2/fastmodulo.h: Part of the AVX2 Titanium CCA Std128 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/api.h: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/keccak.h: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/encrypt.h: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/PQCgenKAT_encrypt.c: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/sampler.h: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/littleendian.h: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/ntt.h: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/Makefile: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/sampler.c: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/encrypt.c: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/rng.c: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/param.h: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/pack.c: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/pack.h: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/rng.h: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/ntt.c: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CPA_lite_AVX2/fastmodulo.h: Part of the AVX2 Titanium CPA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/api.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/kem.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/keccak.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/PQCgenKAT_kem.c: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/encrypt.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/sampler.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/littleendian.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/ntt.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/Makefile: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/sampler.c: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/kem.c: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/encrypt.c: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/rng.c: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/param.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/pack.c: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/pack.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/rng.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/ntt.c: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_lite_AVX2/fastmodulo.h: Part of the AVX2 Titanium CCA Lite96 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/api.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/kem.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/keccak.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/PQCgenKAT_kem.c: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/encrypt.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/sampler.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/littleendian.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/ntt.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/Makefile: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/sampler.c: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/kem.c: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/encrypt.c: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/rng.c: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/param.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/pack.c: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/pack.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/rng.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/ntt.c: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CCA_super_AVX2/fastmodulo.h: Part of the AVX2 Titanium CCA Super256 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/api.h: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/keccak.h: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/encrypt.h: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/PQCgenKAT_encrypt.c: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/sampler.h: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/littleendian.h: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/ntt.h: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/Makefile: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/sampler.c: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/encrypt.c: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/rng.c: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/param.h: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/pack.c: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/pack.h: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/rng.h: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/ntt.c: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_hi_AVX2/fastmodulo.h: Part of the AVX2 Titanium CPA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/api.h: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/keccak.h: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/encrypt.h: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/PQCgenKAT_encrypt.c: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/sampler.h: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/littleendian.h: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/ntt.h: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/Makefile: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/sampler.c: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/encrypt.c: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/rng.c: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/param.h: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/pack.c: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/pack.h: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/rng.h: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/ntt.c: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CPA_med_AVX2/fastmodulo.h: Part of the AVX2 Titanium CPA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/api.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/kem.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/keccak.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/PQCgenKAT_kem.c: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/encrypt.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/sampler.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/littleendian.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/ntt.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/Makefile: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/sampler.c: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/kem.c: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/encrypt.c: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/rng.c: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/param.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/pack.c: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/pack.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/rng.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/ntt.c: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CCA_med_AVX2/fastmodulo.h: Part of the AVX2 Titanium CCA Med160 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/api.h: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/keccak.h: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/encrypt.h: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/PQCgenKAT_encrypt.c: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/sampler.h: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/littleendian.h: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/ntt.h: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/Makefile: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/sampler.c: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/encrypt.c: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/rng.c: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/param.h: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/pack.c: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/pack.h: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/rng.h: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/ntt.c: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CPA_std_AVX2/fastmodulo.h: Part of the AVX2 Titanium CPA Std128 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/api.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/kem.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/keccak.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/PQCgenKAT_kem.c: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/encrypt.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/sampler.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/littleendian.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/ntt.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/Makefile: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/sampler.c: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/kem.c: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/encrypt.c: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/rng.c: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/param.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/pack.c: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/pack.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/rng.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/ntt.c: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CCA_hi_AVX2/fastmodulo.h: Part of the AVX2 Titanium CCA Hi192 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/api.h: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/keccak.h: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/encrypt.h: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/PQCgenKAT_encrypt.c: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/sampler.h: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/littleendian.h: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/ntt.h: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/Makefile: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/sampler.c: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/encrypt.c: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/rng.c: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/param.h: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/pack.c: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/pack.h: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/rng.h: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/ntt.c: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_super_AVX2/fastmodulo.h: Part of the AVX2 Titanium CPA Super256 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/api.h: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/keccak.h: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/encrypt.h: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/PQCgenKAT_encrypt.c: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/sampler.h: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/littleendian.h: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/ntt.h: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/Makefile: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/sampler.c: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/fastrandombytes.c: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/encrypt.c: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/rng.c: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/param.h: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/pack.c: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/pack.h: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/fastrandombytes.h: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/rng.h: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/ntt.c: Part of the AVX2 Titanium CPA Toy64 implementation
+./Additional_Implementation/Titanium_CPA_toy_AVX2/fastmodulo.h: Part of the AVX2 Titanium CPA Toy64 implementation
+./KAT/Titanium_CCA_std/PQCkemKAT_16384.rsp: KAT files
+./KAT/Titanium_CCA_std/PQCkemKAT_16384.req: KAT files
+./KAT/Titanium_CPA_hi/PQCencryptKAT_32.rsp: KAT files
+./KAT/Titanium_CPA_hi/PQCencryptKAT_32.req: KAT files
+./KAT/Titanium_CPA_std/PQCencryptKAT_32.rsp: KAT files
+./KAT/Titanium_CPA_std/PQCencryptKAT_32.req: KAT files
+./KAT/Titanium_CPA_lite/PQCencryptKAT_32.rsp: KAT files
+./KAT/Titanium_CPA_lite/PQCencryptKAT_32.req: KAT files
+./KAT/Titanium_CPA_toy/PQCencryptKAT_32.rsp: KAT files
+./KAT/Titanium_CPA_toy/PQCencryptKAT_32.req: KAT files
+./KAT/Titanium_CPA_med/PQCencryptKAT_32.rsp: KAT files
+./KAT/Titanium_CPA_med/PQCencryptKAT_32.req: KAT files
+./KAT/Titanium_CCA_hi/PQCkemKAT_20544.req: KAT files
+./KAT/Titanium_CCA_hi/PQCkemKAT_20544.rsp: KAT files
+./KAT/Titanium_CPA_super/PQCencryptKAT_32.rsp: KAT files
+./KAT/Titanium_CPA_super/PQCencryptKAT_32.req: KAT files
+./KAT/Titanium_CCA_toy/PQCkemKAT_12224.req: KAT files
+./KAT/Titanium_CCA_toy/PQCkemKAT_12224.rsp: KAT files
+./KAT/Titanium_CCA_med/PQCkemKAT_18304.rsp: KAT files
+./KAT/Titanium_CCA_med/PQCkemKAT_18304.req: KAT files
+./KAT/Titanium_CCA_lite/PQCkemKAT_14752.req: KAT files
+./KAT/Titanium_CCA_lite/PQCkemKAT_14752.rsp: KAT files
+./KAT/Titanium_CCA_super/PQCkemKAT_26944.req: KAT files
+./KAT/Titanium_CCA_super/PQCkemKAT_26944.rsp: KAT files
+./README: This file
+./Reference_Implementation/Titanium_CCA_std/api.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/product.c: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/kem.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/keccak.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/PQCgenKAT_kem.c: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/encrypt.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/sampler.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/littleendian.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/ntt.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/Makefile: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/sampler.c: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/kem.c: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/fastrandombytes.c: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/encrypt.c: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/rng.c: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/param.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/pack.c: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/pack.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/fastrandombytes.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/product.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/rng.h: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CCA_std/ntt.c: Part of the reference Titanium CCA Std128 implementation
+./Reference_Implementation/Titanium_CPA_hi/api.h: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/product.c: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/keccak.h: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/encrypt.h: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/PQCgenKAT_encrypt.c: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/sampler.h: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/littleendian.h: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/ntt.h: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/Makefile: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/sampler.c: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/fastrandombytes.c: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/encrypt.c: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/rng.c: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/param.h: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/pack.c: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/pack.h: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/fastrandombytes.h: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/product.h: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/rng.h: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_hi/ntt.c: Part of the reference Titanium CPA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_std/api.h: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/product.c: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/keccak.h: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/encrypt.h: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/PQCgenKAT_encrypt.c: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/sampler.h: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/littleendian.h: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/ntt.h: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/Makefile: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/sampler.c: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/fastrandombytes.c: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/encrypt.c: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/rng.c: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/param.h: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/pack.c: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/pack.h: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/fastrandombytes.h: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/product.h: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/rng.h: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_std/ntt.c: Part of the reference Titanium CPA Std128 implementation
+./Reference_Implementation/Titanium_CPA_lite/api.h: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/product.c: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/keccak.h: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/encrypt.h: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/PQCgenKAT_encrypt.c: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/sampler.h: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/littleendian.h: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/ntt.h: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/Makefile: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/sampler.c: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/fastrandombytes.c: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/encrypt.c: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/rng.c: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/param.h: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/pack.c: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/pack.h: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/fastrandombytes.h: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/product.h: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/rng.h: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_lite/ntt.c: Part of the reference Titanium CPA Lite96 implementation
+./Reference_Implementation/Titanium_CPA_toy/api.h: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/product.c: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/keccak.h: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/encrypt.h: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/PQCgenKAT_encrypt.c: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/sampler.h: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/littleendian.h: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/ntt.h: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/Makefile: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/sampler.c: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/fastrandombytes.c: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/encrypt.c: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/rng.c: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/param.h: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/pack.c: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/pack.h: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/fastrandombytes.h: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/product.h: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/rng.h: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_toy/ntt.c: Part of the reference Titanium CPA Toy64 implementation
+./Reference_Implementation/Titanium_CPA_med/api.h: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/product.c: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/keccak.h: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/encrypt.h: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/PQCgenKAT_encrypt.c: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/sampler.h: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/littleendian.h: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/ntt.h: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/Makefile: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/sampler.c: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/fastrandombytes.c: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/encrypt.c: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/rng.c: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/param.h: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/pack.c: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/pack.h: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/fastrandombytes.h: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/product.h: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/rng.h: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CPA_med/ntt.c: Part of the reference Titanium CPA Med160 implementation
+./Reference_Implementation/Titanium_CCA_hi/api.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/product.c: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/kem.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/keccak.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/PQCgenKAT_kem.c: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/encrypt.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/sampler.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/littleendian.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/ntt.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/Makefile: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/sampler.c: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/kem.c: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/fastrandombytes.c: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/encrypt.c: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/rng.c: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/param.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/pack.c: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/pack.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/fastrandombytes.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/product.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/rng.h: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CCA_hi/ntt.c: Part of the reference Titanium CCA Hi192 implementation
+./Reference_Implementation/Titanium_CPA_super/api.h: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/product.c: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/keccak.h: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/encrypt.h: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/PQCgenKAT_encrypt.c: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/sampler.h: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/littleendian.h: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/ntt.h: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/Makefile: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/sampler.c: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/fastrandombytes.c: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/encrypt.c: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/rng.c: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/param.h: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/pack.c: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/pack.h: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/fastrandombytes.h: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/product.h: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/rng.h: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CPA_super/ntt.c: Part of the reference Titanium CPA Super256 implementation
+./Reference_Implementation/Titanium_CCA_toy/api.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/product.c: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/kem.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/keccak.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/PQCgenKAT_kem.c: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/encrypt.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/sampler.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/littleendian.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/ntt.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/Makefile: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/sampler.c: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/kem.c: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/fastrandombytes.c: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/encrypt.c: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/rng.c: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/param.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/pack.c: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/pack.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/fastrandombytes.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/product.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/rng.h: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_toy/ntt.c: Part of the reference Titanium CCA Toy64 implementation
+./Reference_Implementation/Titanium_CCA_med/api.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/product.c: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/kem.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/keccak.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/PQCgenKAT_kem.c: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/encrypt.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/sampler.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/littleendian.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/ntt.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/Makefile: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/sampler.c: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/kem.c: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/fastrandombytes.c: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/encrypt.c: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/rng.c: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/param.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/pack.c: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/pack.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/fastrandombytes.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/product.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/rng.h: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_med/ntt.c: Part of the reference Titanium CCA Med160 implementation
+./Reference_Implementation/Titanium_CCA_lite/api.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/product.c: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/kem.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/keccak.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/PQCgenKAT_kem.c: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/encrypt.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/sampler.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/littleendian.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/ntt.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/Makefile: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/sampler.c: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/kem.c: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/fastrandombytes.c: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/encrypt.c: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/rng.c: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/param.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/pack.c: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/pack.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/fastrandombytes.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/product.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/rng.h: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_lite/ntt.c: Part of the reference Titanium CCA Lite96 implementation
+./Reference_Implementation/Titanium_CCA_super/api.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/product.c: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/kem.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/keccak.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/PQCgenKAT_kem.c: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/encrypt.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/sampler.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/littleendian.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/ntt.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/Makefile: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/sampler.c: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/kem.c: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/fastrandombytes.c: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/encrypt.c: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/rng.c: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/param.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/pack.c: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/pack.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/fastrandombytes.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/product.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/rng.h: Part of the reference Titanium CCA Super256 implementation
+./Reference_Implementation/Titanium_CCA_super/ntt.c: Part of the reference Titanium CCA Super256 implementation
+./Supporting_Documentation/Sage_Analysis_Scripts/Tit_par_CCA_final.sage: Scripts to generate parameter sets
+./Supporting_Documentation/Sage_Analysis_Scripts/Tit_par_CPA_final.sage: Scripts to generate parameter sets
+./Supporting_Documentation/Coversheet.txt: The coversheet
+./Supporting_Documentation/Titanium_NISTSub.pdf: The main documentation
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_lite_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_toy_MD96_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_toy_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_std_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_toy_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_super_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_hi_MD96_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_med_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_med_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_lite_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_toy_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_std_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_med_MD96_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_toy_MD96_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_std_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_super_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_super_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_hi_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_hi_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_hi_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_std_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_hi_MD96_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_super_MD96_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_lite_MD64_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_hi_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_med_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_toy_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_lite_MD96_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_std_MD96_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_std_MD96_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_lite_MD96_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_med_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_lite_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCPA_med_MD96_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_super_MD40_final.txt: Parameter sets
+./Supporting_Documentation/All_Analysis_ParSets/TitCCA_super_MD96_final.txt: Parameter sets
+./Optimized_Implementation/Titanium_CCA_std/api.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/kem.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/keccak.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/PQCgenKAT_kem.c: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/encrypt.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/sampler.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/littleendian.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/ntt.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/Makefile: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/sampler.c: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/kem.c: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/fastrandombytes.c: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/encrypt.c: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/rng.c: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/param.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/pack.c: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/pack.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/fastrandombytes.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/rng.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/ntt.c: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CCA_std/fastmodulo.h: Part of the platform independent optimized Titanium CCA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_hi/api.h: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/keccak.h: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/encrypt.h: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/PQCgenKAT_encrypt.c: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/sampler.h: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/littleendian.h: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/ntt.h: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/Makefile: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/sampler.c: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/fastrandombytes.c: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/encrypt.c: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/rng.c: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/param.h: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/pack.c: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/pack.h: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/fastrandombytes.h: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/rng.h: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/ntt.c: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_hi/fastmodulo.h: Part of the platform independent optimized Titanium CPA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_std/api.h: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/keccak.h: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/encrypt.h: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/PQCgenKAT_encrypt.c: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/sampler.h: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/littleendian.h: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/ntt.h: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/Makefile: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/sampler.c: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/fastrandombytes.c: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/encrypt.c: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/rng.c: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/param.h: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/pack.c: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/pack.h: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/fastrandombytes.h: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/rng.h: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/ntt.c: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_std/fastmodulo.h: Part of the platform independent optimized Titanium CPA Std128 implementation
+./Optimized_Implementation/Titanium_CPA_lite/api.h: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/keccak.h: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/encrypt.h: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/PQCgenKAT_encrypt.c: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/sampler.h: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/littleendian.h: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/ntt.h: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/Makefile: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/sampler.c: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/fastrandombytes.c: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/encrypt.c: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/rng.c: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/param.h: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/pack.c: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/pack.h: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/fastrandombytes.h: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/rng.h: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/ntt.c: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_lite/fastmodulo.h: Part of the platform independent optimized Titanium CPA Lite96 implementation
+./Optimized_Implementation/Titanium_CPA_toy/api.h: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/keccak.h: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/encrypt.h: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/PQCgenKAT_encrypt.c: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/sampler.h: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/littleendian.h: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/ntt.h: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/Makefile: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/sampler.c: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/fastrandombytes.c: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/encrypt.c: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/rng.c: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/param.h: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/pack.c: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/pack.h: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/fastrandombytes.h: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/rng.h: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/ntt.c: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_toy/fastmodulo.h: Part of the platform independent optimized Titanium CPA Toy64 implementation
+./Optimized_Implementation/Titanium_CPA_med/api.h: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/keccak.h: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/encrypt.h: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/PQCgenKAT_encrypt.c: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/sampler.h: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/littleendian.h: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/ntt.h: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/Makefile: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/sampler.c: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/fastrandombytes.c: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/encrypt.c: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/rng.c: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/param.h: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/pack.c: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/pack.h: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/fastrandombytes.h: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/rng.h: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/ntt.c: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CPA_med/fastmodulo.h: Part of the platform independent optimized Titanium CPA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_hi/api.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/kem.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/keccak.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/PQCgenKAT_kem.c: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/encrypt.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/sampler.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/littleendian.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/ntt.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/Makefile: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/sampler.c: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/kem.c: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/fastrandombytes.c: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/encrypt.c: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/rng.c: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/param.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/pack.c: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/pack.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/fastrandombytes.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/rng.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/ntt.c: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CCA_hi/fastmodulo.h: Part of the platform independent optimized Titanium CCA Hi192 implementation
+./Optimized_Implementation/Titanium_CPA_super/api.h: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/keccak.h: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/encrypt.h: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/PQCgenKAT_encrypt.c: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/sampler.h: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/littleendian.h: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/ntt.h: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/Makefile: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/sampler.c: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/fastrandombytes.c: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/encrypt.c: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/rng.c: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/param.h: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/pack.c: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/pack.h: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/fastrandombytes.h: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/rng.h: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/ntt.c: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CPA_super/fastmodulo.h: Part of the platform independent optimized Titanium CPA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_toy/api.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/kem.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/keccak.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/PQCgenKAT_kem.c: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/encrypt.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/sampler.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/littleendian.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/ntt.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/Makefile: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/sampler.c: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/kem.c: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/fastrandombytes.c: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/encrypt.c: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/rng.c: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/param.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/pack.c: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/pack.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/fastrandombytes.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/rng.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/ntt.c: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_toy/fastmodulo.h: Part of the platform independent optimized Titanium CCA Toy64 implementation
+./Optimized_Implementation/Titanium_CCA_med/api.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/kem.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/keccak.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/PQCgenKAT_kem.c: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/encrypt.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/sampler.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/littleendian.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/ntt.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/Makefile: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/sampler.c: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/kem.c: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/fastrandombytes.c: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/encrypt.c: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/rng.c: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/param.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/pack.c: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/pack.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/fastrandombytes.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/rng.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/ntt.c: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_med/fastmodulo.h: Part of the platform independent optimized Titanium CCA Med160 implementation
+./Optimized_Implementation/Titanium_CCA_lite/api.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/kem.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/keccak.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/PQCgenKAT_kem.c: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/encrypt.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/sampler.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/littleendian.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/ntt.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/Makefile: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/sampler.c: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/kem.c: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/fastrandombytes.c: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/encrypt.c: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/rng.c: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/param.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/pack.c: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/pack.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/fastrandombytes.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/rng.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/ntt.c: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_lite/fastmodulo.h: Part of the platform independent optimized Titanium CCA Lite96 implementation
+./Optimized_Implementation/Titanium_CCA_super/api.h: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/kem.h: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/keccak.h: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/PQCgenKAT_kem.c: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/encrypt.h: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/sampler.h: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/littleendian.h: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/ntt.h: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/Makefile: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/sampler.c: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/kem.c: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/fastrandombytes.c: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/encrypt.c: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/rng.c: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/param.h: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/pack.c: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/pack.h: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/fastrandombytes.h: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/rng.h: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/ntt.c: Part of the platform independent optimized Titanium CCA Super256 implementation
+./Optimized_Implementation/Titanium_CCA_super/fastmodulo.h: Part of the platform independent optimized Titanium CCA Super256 implementation

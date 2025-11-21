@@ -1,0 +1,33 @@
+gf2x is a library for multiplying polynomials over the binary field.
+
+Version: 1.2
+Licence: LGPL-licensed
+
+Link to the main page: http://gf2x.gforge.inria.fr
+Link to download: https://gforge.inria.fr/frs/?group_id=1874&release_id=10203#gf2x-_1.2-title-content
+
+
+
+To install gf2x (cf. README of gf2x), just use:
+
+1)
+./configure 
+make
+
+2)
+make check
+
+3)
+make tune-lowlevel
+make tune-toom
+make tune-fft
+
+4)
+make check
+
+5)
+make install
+
+
+
+For the compilation, do not forget the -lgf2x option.

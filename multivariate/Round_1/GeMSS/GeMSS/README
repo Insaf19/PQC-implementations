@@ -1,0 +1,573 @@
+Each implementation has a Makefile, this Makefile creates the executable 
+PQCgenKAT_sign which was used to generate the KATs files.
+
+For each implementation, it is the same files for every levels of security 
+(it is just copy and paste, just config_HFE.h is modified to modify the choice 
+of parameters, and PQCgenKAT_sign.c is modified to choose the number of KAT).
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+How to use config_HFE.h: 
+You can modify these parameters:
+#define K to choose the level of classical security. It is to put the length 
+of SHA3 to 2K bits.
+#define HFEn to choose n the degree of extension.
+#define HFEv to choose v the number of vinegar variables.
+#define HFEm to choose m the number of equation.
+#define NB_ITE to choose NB_ITE (cf. specification)
+#define HFEDeg : HFEDeg is the degree of HFE polynomial F
+#define HFEDegI
+#define HFEDegJ
+HFEDeg=(2^HFEDegI)+(2^HFEDegJ).
+
+For optimized and additional implementations:
+#define __TRINOMHFE__ or __PENTANOMHFE__
+#define K3
+#define K2
+#define K1
+To choose the irreductible polynomial of degree n, with NTL format.
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+KAT/sign/*/kat_sign.int: intermediate values for Known Answer Test
+KAT/sign/*/kat_sign.req: input for Known Answer Test
+KAT/sign/*/kat_sign.rsp: output for Known Answer Test
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+README: this file
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+Supporting_Documentation/doc.pdf: main documentation
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+Third-party_library/gf2x-1.2.zip: package for gf2x
+Third-party_library/README: file to explain how to install gf2x
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+List of all files:
+
+Additional_Implementation/sign/GeMSS128/include/add.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/api.h: sizes for this implementation
+Additional_Implementation/sign/GeMSS128/include/arch.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/arith.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/bit.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/changeEquationMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/changeVariableMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/chooseRootHFE.hpp: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/config_HFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/convNTL.hpp: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/determinant.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/determinantnv.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/encrypt_keypairHFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/evaluateMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/evaluateMQSnoconst.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/extract.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/frobeniusMap.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/genCanonicalBasis.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/genHFEtab.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/genSecretMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/init.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/init_list_differences.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/initMatrixIdn.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/invMatrix.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/invMatrixnv.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/KAT_int.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/matVecProduct.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/mul.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/printgf2x.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/randombytes.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/rem.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/rng.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/signHFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/sign_openHFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/types_HFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/include/vecMatProduct.h: part of additional implementation
+Additional_Implementation/sign/GeMSS128/Makefile: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/arith.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/bit.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/changeEquationMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/changeVariableMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/chooseRootHFE.cpp: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/convNTL.cpp: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/determinant.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/determinantnv.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/encrypt_keypairHFE.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/evaluateMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/evaluateMQSnoconst.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/frobeniusMap.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/genCanonicalBasis.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/genHFEtab.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/genSecretMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/init_list_differences.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/initMatrixIdn.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/invMatrix.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/invMatrixnv.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/KAT_int.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/matVecProduct.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/mul.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/PQCgenKAT_sign.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/printgf2x.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/rem.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/rng.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/sign.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/signHFE.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/sign_openHFE.c: part of additional implementation
+Additional_Implementation/sign/GeMSS128/src/vecMatProduct.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/add.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/api.h: sizes for this implementation
+Additional_Implementation/sign/GeMSS192/include/arch.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/arith.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/bit.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/changeEquationMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/changeVariableMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/chooseRootHFE.hpp: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/config_HFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/convNTL.hpp: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/determinant.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/determinantnv.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/encrypt_keypairHFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/evaluateMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/evaluateMQSnoconst.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/extract.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/frobeniusMap.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/genCanonicalBasis.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/genHFEtab.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/genSecretMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/init.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/init_list_differences.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/initMatrixIdn.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/invMatrix.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/invMatrixnv.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/KAT_int.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/matVecProduct.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/mul.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/printgf2x.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/randombytes.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/rem.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/rng.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/signHFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/sign_openHFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/types_HFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/include/vecMatProduct.h: part of additional implementation
+Additional_Implementation/sign/GeMSS192/Makefile: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/arith.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/bit.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/changeEquationMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/changeVariableMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/chooseRootHFE.cpp: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/convNTL.cpp: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/determinant.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/determinantnv.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/encrypt_keypairHFE.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/evaluateMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/evaluateMQSnoconst.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/frobeniusMap.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/genCanonicalBasis.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/genHFEtab.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/genSecretMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/init_list_differences.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/initMatrixIdn.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/invMatrix.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/invMatrixnv.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/KAT_int.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/matVecProduct.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/mul.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/PQCgenKAT_sign.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/printgf2x.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/rem.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/rng.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/sign.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/signHFE.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/sign_openHFE.c: part of additional implementation
+Additional_Implementation/sign/GeMSS192/src/vecMatProduct.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/add.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/api.h: sizes for this implementation
+Additional_Implementation/sign/GeMSS256/include/arch.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/arith.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/bit.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/changeEquationMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/changeVariableMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/chooseRootHFE.hpp: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/config_HFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/convNTL.hpp: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/determinant.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/determinantnv.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/encrypt_keypairHFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/evaluateMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/evaluateMQSnoconst.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/extract.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/frobeniusMap.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/genCanonicalBasis.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/genHFEtab.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/genSecretMQS.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/init.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/init_list_differences.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/initMatrixIdn.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/invMatrix.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/invMatrixnv.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/KAT_int.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/matVecProduct.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/mul.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/printgf2x.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/randombytes.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/rem.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/rng.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/signHFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/sign_openHFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/types_HFE.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/include/vecMatProduct.h: part of additional implementation
+Additional_Implementation/sign/GeMSS256/Makefile: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/arith.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/bit.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/changeEquationMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/changeVariableMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/chooseRootHFE.cpp: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/convNTL.cpp: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/determinant.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/determinantnv.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/encrypt_keypairHFE.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/evaluateMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/evaluateMQSnoconst.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/frobeniusMap.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/genCanonicalBasis.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/genHFEtab.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/genSecretMQS.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/init_list_differences.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/initMatrixIdn.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/invMatrix.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/invMatrixnv.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/KAT_int.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/matVecProduct.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/mul.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/PQCgenKAT_sign.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/printgf2x.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/rem.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/rng.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/sign.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/signHFE.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/sign_openHFE.c: part of additional implementation
+Additional_Implementation/sign/GeMSS256/src/vecMatProduct.c: part of additional implementation
+KAT/sign/GeMSS128/PQCsignKAT_14208.int: intermediate values for Known Answer Test
+KAT/sign/GeMSS128/PQCsignKAT_14208.req: input for Known Answer Test
+KAT/sign/GeMSS128/PQCsignKAT_14208.rsp: output for Known Answer Test
+KAT/sign/GeMSS192/PQCsignKAT_39440.int: intermediate values for Known Answer Test
+KAT/sign/GeMSS192/PQCsignKAT_39440.req: input for Known Answer Test
+KAT/sign/GeMSS192/PQCsignKAT_39440.rsp: output for Known Answer Test
+KAT/sign/GeMSS256/PQCsignKAT_82056.int: intermediate values for Known Answer Test
+KAT/sign/GeMSS256/PQCsignKAT_82056.req: input for Known Answer Test
+KAT/sign/GeMSS256/PQCsignKAT_82056.rsp: output for Known Answer Test
+Optimized_Implementation/sign/GeMSS128/include/add.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/api.h: sizes for this implementation
+Optimized_Implementation/sign/GeMSS128/include/arch.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/arith.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/bit.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/changeEquationMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/changeVariableMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/chooseRootHFE.hpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/config_HFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/convNTL.hpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/determinant.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/determinantnv.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/encrypt_keypairHFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/evaluateMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/evaluateMQSnoconst.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/frobeniusMap.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/genCanonicalBasis.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/genHFEtab.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/genSecretMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/init.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/init_list_differences.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/initMatrixIdn.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/invMatrix.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/invMatrixnv.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/KAT_int.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/matVecProduct.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/mul.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/printgf2x.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/randombytes.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/rem.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/rng.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/signHFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/sign_openHFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/types_HFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/include/vecMatProduct.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/Makefile: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/arith.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/bit.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/changeEquationMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/changeVariableMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/chooseRootHFE.cpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/convNTL.cpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/determinant.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/determinantnv.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/encrypt_keypairHFE.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/evaluateMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/evaluateMQSnoconst.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/frobeniusMap.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/genCanonicalBasis.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/genHFEtab.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/genSecretMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/init_list_differences.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/initMatrixIdn.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/invMatrix.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/invMatrixnv.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/KAT_int.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/matVecProduct.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/mul.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/PQCgenKAT_sign.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/printgf2x.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/rem.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/rng.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/sign.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/signHFE.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/sign_openHFE.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS128/src/vecMatProduct.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/add.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/api.h: sizes for this implementation
+Optimized_Implementation/sign/GeMSS192/include/arch.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/arith.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/bit.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/changeEquationMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/changeVariableMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/chooseRootHFE.hpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/config_HFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/convNTL.hpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/determinant.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/determinantnv.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/encrypt_keypairHFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/evaluateMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/evaluateMQSnoconst.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/frobeniusMap.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/genCanonicalBasis.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/genHFEtab.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/genSecretMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/init.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/init_list_differences.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/initMatrixIdn.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/invMatrix.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/invMatrixnv.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/KAT_int.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/matVecProduct.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/mul.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/printgf2x.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/randombytes.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/rem.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/rng.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/signHFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/sign_openHFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/types_HFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/include/vecMatProduct.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/Makefile: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/arith.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/bit.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/changeEquationMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/changeVariableMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/chooseRootHFE.cpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/convNTL.cpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/determinant.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/determinantnv.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/encrypt_keypairHFE.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/evaluateMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/evaluateMQSnoconst.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/frobeniusMap.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/genCanonicalBasis.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/genHFEtab.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/genSecretMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/init_list_differences.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/initMatrixIdn.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/invMatrix.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/invMatrixnv.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/KAT_int.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/matVecProduct.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/mul.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/PQCgenKAT_sign.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/printgf2x.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/rem.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/rng.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/sign.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/signHFE.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/sign_openHFE.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS192/src/vecMatProduct.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/add.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/api.h: sizes for this implementation
+Optimized_Implementation/sign/GeMSS256/include/arch.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/arith.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/bit.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/changeEquationMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/changeVariableMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/chooseRootHFE.hpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/config_HFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/convNTL.hpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/determinant.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/determinantnv.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/encrypt_keypairHFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/evaluateMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/evaluateMQSnoconst.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/frobeniusMap.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/genCanonicalBasis.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/genHFEtab.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/genSecretMQS.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/init.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/init_list_differences.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/initMatrixIdn.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/invMatrix.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/invMatrixnv.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/KAT_int.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/matVecProduct.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/mul.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/printgf2x.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/randombytes.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/rem.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/rng.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/signHFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/sign_openHFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/types_HFE.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/include/vecMatProduct.h: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/Makefile: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/arith.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/bit.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/changeEquationMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/changeVariableMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/chooseRootHFE.cpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/convNTL.cpp: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/determinant.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/determinantnv.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/encrypt_keypairHFE.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/evaluateMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/evaluateMQSnoconst.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/frobeniusMap.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/genCanonicalBasis.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/genHFEtab.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/genSecretMQS.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/init_list_differences.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/initMatrixIdn.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/invMatrix.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/invMatrixnv.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/KAT_int.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/matVecProduct.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/mul.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/PQCgenKAT_sign.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/printgf2x.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/rem.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/rng.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/sign.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/signHFE.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/sign_openHFE.c: part of portable implementation
+Optimized_Implementation/sign/GeMSS256/src/vecMatProduct.c: part of portable implementation
+README: this file
+Reference_Implementation/sign/GeMSS128/include/add.h: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/api.h: sizes for this implementation
+Reference_Implementation/sign/GeMSS128/include/arch.h: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/bit.h: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/chooseRootHFE.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/config_HFE.h: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/convNTL.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/encrypt_keypairHFE.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/evaluateMQS.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/genHFEtab.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/genSecretMQS.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/init.h: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/KAT_int.h: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/printgf2x.h: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/randombytes.h: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/rng.h: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/signHFE.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/sign_openHFE.h: part of reference implementation
+Reference_Implementation/sign/GeMSS128/include/types_HFE.h: part of reference implementation
+Reference_Implementation/sign/GeMSS128/Makefile: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/bit.c: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/chooseRootHFE.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/convNTL.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/encrypt_keypairHFE.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/evaluateMQS.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/genHFEtab.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/genSecretMQS.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/KAT_int.c: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/PQCgenKAT_sign.c: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/printgf2x.c: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/rng.c: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/sign.c: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/signHFE.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS128/src/sign_openHFE.c: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/add.h: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/api.h: sizes for this implementation
+Reference_Implementation/sign/GeMSS192/include/arch.h: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/bit.h: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/chooseRootHFE.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/config_HFE.h: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/convNTL.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/encrypt_keypairHFE.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/evaluateMQS.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/genHFEtab.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/genSecretMQS.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/init.h: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/KAT_int.h: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/printgf2x.h: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/randombytes.h: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/rng.h: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/signHFE.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/sign_openHFE.h: part of reference implementation
+Reference_Implementation/sign/GeMSS192/include/types_HFE.h: part of reference implementation
+Reference_Implementation/sign/GeMSS192/Makefile: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/bit.c: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/chooseRootHFE.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/convNTL.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/encrypt_keypairHFE.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/evaluateMQS.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/genHFEtab.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/genSecretMQS.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/KAT_int.c: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/PQCgenKAT_sign.c: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/printgf2x.c: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/rng.c: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/sign.c: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/signHFE.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS192/src/sign_openHFE.c: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/add.h: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/api.h: sizes for this implementation
+Reference_Implementation/sign/GeMSS256/include/arch.h: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/bit.h: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/chooseRootHFE.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/config_HFE.h: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/convNTL.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/encrypt_keypairHFE.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/evaluateMQS.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/genHFEtab.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/genSecretMQS.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/init.h: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/KAT_int.h: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/printgf2x.h: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/randombytes.h: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/rng.h: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/signHFE.hpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/sign_openHFE.h: part of reference implementation
+Reference_Implementation/sign/GeMSS256/include/types_HFE.h: part of reference implementation
+Reference_Implementation/sign/GeMSS256/Makefile: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/bit.c: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/chooseRootHFE.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/convNTL.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/encrypt_keypairHFE.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/evaluateMQS.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/genHFEtab.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/genSecretMQS.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/KAT_int.c: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/PQCgenKAT_sign.c: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/printgf2x.c: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/rng.c: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/sign.c: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/signHFE.cpp: part of reference implementation
+Reference_Implementation/sign/GeMSS256/src/sign_openHFE.c: part of reference implementation
+Supporting_Documentation/doc.pdf: main documentation
+Third-party_library/gf2x-1.2.zip: additional file
+Third-party_library/README: additional file

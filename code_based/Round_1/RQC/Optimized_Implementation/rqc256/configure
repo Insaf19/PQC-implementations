@@ -1,0 +1,20 @@
+#!/bin/bash
+
+MPFQ_FIELD=2_139
+
+mkdir -p ./lib/mpfq/src
+mkdir -p ./lib/mpfq/include/mpfq
+
+cd ./lib/mpfq/mpfq-1.1/src
+rm -f ./CMakeCache.txt
+chmod u+x ./gf2n/gen_gf2n.pl
+
+cmake .
+make gen-$MPFQ_FIELD
+
+cp ./gf2n/libmpfq_$MPFQ_FIELD.a ../../src
+cp ./include/mpfq/mpfq_$MPFQ_FIELD.h ../../include
+cp ./include/mpfq/fixmp.h ../../include/mpfq
+cp ./include/mpfq/mpfq.h ../../include/mpfq
+cp ./include/mpfq/mpfq_gf2n_common.h ../../include/mpfq
+

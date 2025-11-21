@@ -1,0 +1,82 @@
+# This file
+./README
+
+# Coversheet
+./Supporting_Documentation/coversheet.pdf
+./Supporting_Documentation/coversheetSigned.pdf.pdf
+
+# Main specification document
+./Supporting_Documentation/mqdss.pdf
+
+# Document listing second-round changes
+./Supporting_Documentation/SecondRoundTweaks.pdf
+
+# Reference implemenation of MQDSS-31-48
+./Reference_Implementation/crypto_sign/mqdss-48/PQCgenKAT_sign.c
+./Reference_Implementation/crypto_sign/mqdss-48/fips202.h
+./Reference_Implementation/crypto_sign/mqdss-48/gf31.h
+./Reference_Implementation/crypto_sign/mqdss-48/api.h
+./Reference_Implementation/crypto_sign/mqdss-48/mq.h
+./Reference_Implementation/crypto_sign/mqdss-48/mq.c
+./Reference_Implementation/crypto_sign/mqdss-48/rng.c
+./Reference_Implementation/crypto_sign/mqdss-48/params.h
+./Reference_Implementation/crypto_sign/mqdss-48/gf31.c
+./Reference_Implementation/crypto_sign/mqdss-48/rng.h
+./Reference_Implementation/crypto_sign/mqdss-48/Makefile
+./Reference_Implementation/crypto_sign/mqdss-48/fips202.c
+./Reference_Implementation/crypto_sign/mqdss-48/sign.c
+
+# Reference implemenation of MQDSS-31-64
+./Reference_Implementation/crypto_sign/mqdss-64/PQCgenKAT_sign.c
+./Reference_Implementation/crypto_sign/mqdss-64/fips202.h
+./Reference_Implementation/crypto_sign/mqdss-64/gf31.h
+./Reference_Implementation/crypto_sign/mqdss-64/api.h
+./Reference_Implementation/crypto_sign/mqdss-64/mq.h
+./Reference_Implementation/crypto_sign/mqdss-64/mq.c
+./Reference_Implementation/crypto_sign/mqdss-64/rng.c
+./Reference_Implementation/crypto_sign/mqdss-64/params.h
+./Reference_Implementation/crypto_sign/mqdss-64/gf31.c
+./Reference_Implementation/crypto_sign/mqdss-64/rng.h
+./Reference_Implementation/crypto_sign/mqdss-64/Makefile
+./Reference_Implementation/crypto_sign/mqdss-64/fips202.c
+./Reference_Implementation/crypto_sign/mqdss-64/sign.c
+
+# Implementation of MQDSS-31-48 optimized using AVX2 vector instructions
+./Optimized_Implementation/crypto_sign/mqdss-48/PQCgenKAT_sign.c
+./Optimized_Implementation/crypto_sign/mqdss-48/fips202.h
+./Optimized_Implementation/crypto_sign/mqdss-48/gf31.h
+./Optimized_Implementation/crypto_sign/mqdss-48/api.h
+./Optimized_Implementation/crypto_sign/mqdss-48/mq.h
+./Optimized_Implementation/crypto_sign/mqdss-48/mq.c
+./Optimized_Implementation/crypto_sign/mqdss-48/rng.c
+./Optimized_Implementation/crypto_sign/mqdss-48/params.h
+./Optimized_Implementation/crypto_sign/mqdss-48/gf31.c
+./Optimized_Implementation/crypto_sign/mqdss-48/rng.h
+./Optimized_Implementation/crypto_sign/mqdss-48/Makefile
+./Optimized_Implementation/crypto_sign/mqdss-48/fips202.c
+./Optimized_Implementation/crypto_sign/mqdss-48/sign.c
+
+# Implementation of MQDSS-31-64 optimized using AVX2 vector instructions
+./Optimized_Implementation/crypto_sign/mqdss-64/PQCgenKAT_sign.c
+./Optimized_Implementation/crypto_sign/mqdss-64/fips202.h
+./Optimized_Implementation/crypto_sign/mqdss-64/gf31.h
+./Optimized_Implementation/crypto_sign/mqdss-64/api.h
+./Optimized_Implementation/crypto_sign/mqdss-64/mq.h
+./Optimized_Implementation/crypto_sign/mqdss-64/mq.c
+./Optimized_Implementation/crypto_sign/mqdss-64/rng.c
+./Optimized_Implementation/crypto_sign/mqdss-64/params.h
+./Optimized_Implementation/crypto_sign/mqdss-64/gf31.c
+./Optimized_Implementation/crypto_sign/mqdss-64/rng.h
+./Optimized_Implementation/crypto_sign/mqdss-64/Makefile
+./Optimized_Implementation/crypto_sign/mqdss-64/fips202.c
+./Optimized_Implementation/crypto_sign/mqdss-64/sign.c
+
+# KAT values of MQDSS-31-48 produced by PQCgenKAT_sign (provided by NIST) 
+./KAT/mqdss-48/PQCsignKAT_32.rsp
+./KAT/mqdss-48/PQCsignKAT_32.req
+
+# KAT values of MQDSS-31-64 produced by PQCgenKAT_sign (provided by NIST) 
+./KAT/mqdss-64/PQCsignKAT_32.rsp
+./KAT/mqdss-64/PQCsignKAT_32.req
+
+

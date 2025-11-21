@@ -1,0 +1,37 @@
+Cover Sheet 
+===========
+
+Titanium Package: Proposal for a NIST Post-Quantum Public-key Encryption
+and KEM Standard
+
+* Name of Proposed Cryptosystems: 
+-- Titanium-CPA (Public-Key Encryption scheme) 
+and 
+-- Titanium-KEM-CCA (Key Encapsulation Mechanism scheme)
+
+* Principal Submitter:
+
+Ron Steinfeld 
+Faculty of Information Technology,
+Monash University, 
+Clayton VIC 3800
+Australia
+
+Email: ron.steinfeld@monash.edu
+Phone: +61 3 99055225
+Fax: +61 3 9905 5159 
+
+* Auxilliary Submitters:
+
+Amin Sakzad (email: amin.sakzad@monash.edu)
+Raymond K. Zhao (email: raymond.zhao@monash.edu)
+
+* Name of Inventors/Developers of the cryptosystems:
+
+Ron Steinfeld 
+Amin Sakzad
+Raymond Zhao
+Damien Stehle
+Miruna Rosca
+
+

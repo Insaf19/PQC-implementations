@@ -1,0 +1,65 @@
+/*! \mainpage HQC: a Public-Key Encryption scheme
+ *
+ *  1. SUBMISSION OVERVIEW
+ *  ----------------------
+ *
+ *  In order to fully understand this submission, one should note that HQC is a public-key encryption scheme submitted as a KEM for which NIST "standard conversion techniques" should be applied (see NIST FAQ#13). In addition, the aforementionned KEM is obtained by applying a conversion technique to a PKE. In order to avoid any confusion, we may refer to:
+ *
+ * - <b>HQC_PKE IND-CPA</b>: HQC PKE IND-CPA scheme due to \cite aguilar2016efficient.
+ * - <b>HQC_KEM IND-CCA2</b>: HQC KEM IND-CCA2 scheme obtained by applying the transformation from \cite aguilar2016efficient to the HQC PKE IND-CPA scheme. It is the implementation provided.
+ * - <b>HQC_PKE IND-CCA2</b>: HQC PKE IND-CCA2 scheme obtained by applying NIST "standard conversion techniques" to the HQC KEM IND-CCA2 scheme. It is the scheme submitted.<br />
+ *
+ * 
+ * Both reference implementation and optimized implementation provided for this submission are the same. Ten parameters sets denoted respectively HQC-basic-I, HQC-basic-II, HQC-basic-III, HQC-advanced-I, HQC-advanced-II, HQC-advanced-III, HQC-paranoiac-I, HQC-paranoiac-II, HQC-paranoiac-III and HQC-paranoiac-IV are provided as explained in the supporting documentation. Each parameter set folder is organized as follows:
+ * 
+ *  - <b>bin/</b>: Files generated during compilation
+ *  - <b>doc/</b>: Technical documentation of the scheme
+ *  - <b>lib/</b>: Third party libraries used 
+ *  - <b>src/</b>: Source code of the scheme  
+ *  - <b>doxygen.conf</b>: Documentation configuration file
+ *  - <b>Makefile</b>: Makefile
+ *  
+ *  <br />
+ *  
+ *  2. INSTALLATION INSTRUCTIONS
+ *  ----------------------------
+ *  
+ *  <h3>2.1 Requirements</h3>
+ *
+ *  The following softwares and librairies are required: <b>make</b>, <b>gcc</b> and <b>openssl</b>.
+ *
+ *  <h3>2.2 Compilation Step</h3>
+ *
+ *  Let <b>X</b> denotes <b>-basic-I</b>, <b>-basic-II</b>, <b>-basic-III</b>, <b>-advanced-I</b>, <b>-advanced-II</b>, <b>-advanced-III</b>, <b>-paranoiac-I</b>, <b>-paranoiac-II</b>, <b>-paranoiac-III</b> or <b>-paranoiac-IV</b>  depending on the parameter set considered. HQC can be compiled in three differents ways:
+ *  - Execute <b>make hqcX</b> to compile a working example of the scheme. Run <b>bin/hqcX</b> to execute all the steps of the scheme and display theirs respective performances.
+ *  - Execute <b>make hqcX-kat</b> to compile the NIST KAT generator. Run <b>bin/hqcX-kat</b> to generate KAT files.
+ *  - Execute <b>make hqcX-verbose</b> to compile a working example of the scheme in verbose mode. Run <b>bin/hqcX-verbose</b> to generate intermediate values.
+ *
+ *  During compilation, the following files are created inside the <b>bin/build</b> folder:
+ *  - <b>hash.o</b>: A wrapper around openssl SHA512 implementation
+ *  - <b>rng.o</b>: NIST rng
+ *  - <b>parsing.o</b>: Functions to parse public key, secret key and ciphertext of the scheme.
+ *  - <b>vector.o</b>: Functions to manipulate vectors.
+ *  - <b>bch.o</b>: Functions to encode and decode messages using BCH codes (either in normal mode or verbose mode).
+ *  - <b>repetition.o</b>: Functions to encode and decode messages using repetition codes.
+ *  - <b>tensor.o</b>: Functions to encode and decode messages using tensor codes (either in normal mode or verbose mode).
+ *  - <b>hqc.o</b>: The HQC PKE IND-CPA scheme (either in normal mode or verbose mode).
+ *  - <b>kem.o</b>: The HQC KEM IND-CCA2 scheme (either in normal mode or verbose mode).
+ *
+ * <br />
+ *
+ *  3. DOCUMENTATION 
+ *  ----------------
+ *
+ *  <h3>3.1 Requirements</h3>
+ *
+ *  The following softwares are required: <b>doxygen</b> and <b>bibtex</b>.
+ *
+ *  <h3>3.2 Generation Step</h3>
+ * 
+ *  - Run <b>doxygen doxygen.conf</b> to generate the code documentation
+ *  - Browse <b>doc/html/index.html</b> to read the documentation
+ *
+ * <br />
+ *
+ */

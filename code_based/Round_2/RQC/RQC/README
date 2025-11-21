@@ -1,0 +1,49 @@
++=============================================================================+
+|                                                                             |
+|               ***********************************************               |
+|               *     POST-QUANTUM CRYPTO STANDARDIZATION     *               |
+|               ***********************************************               |
+|                                                                             |
+|=============================================================================|
+|                                                                             |
+|        Proposal: RQC                                                        |
+|                                                                             |
+|        Submitters (by alphabetical order):                        |
+|                  - Carlos AGUILAR MELCHOR                                   |
+|                  - Nicolas ARAGON                                           |
+|                  - Slim BETTAIEB                                            |
+|                  - Loïc BIDOUX                                              |
+|                  - Olivier BLAZY                                            |
+|                  - Alain COUVREUR                                           |
+| [backup contact] - Jean-Christophe DENEUVILLE                               |
+| [main contact]   - Philippe GABORIT                                         |
+|                  - Adrien HAUTEVILLE                                        |
+|                  - Gilles ZÉMOR                                             |
+|                                                                             |
+|        Inventors: Same as submitters                                        |
+|                                                                             |
+|        Developers: Same as submitters                                       |
+|                                                                             |
+|        Owners: Same as submitters                                           |
+|                                                                             |
++=============================================================================+
+
+This archive is a proposal in response to NIST's call for proposal for standar-
+dization of quantum-resistant public-key cryptographic algorithms.
+
+RQC provides POST-QUANTUM CODE-BASED PUBLIC KEY ENCRYPTION and targets NIST's 
+security levels 1, 3, and 5.
+
+===============================================================================
+
+This archive is organized as follows:
+
+- KATs: Known Answer Test values and verbose outputs for each parameter set
+- Reference_Implementation: Implementation of each parameter set
+- Optimized_Implementation: Copy of Reference_Implementation
+- Supporting_Documentation: Supporting documentation and tweaks for round 2
+
+===============================================================================
+
+The authors did their best to make this archive complete and proper.
+    

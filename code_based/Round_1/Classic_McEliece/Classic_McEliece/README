@@ -1,0 +1,288 @@
+Additional_Implementations/kem/mceliece8192128/avx/api.h: sizes for this implementation
+Additional_Implementations/kem/mceliece8192128/avx/benes.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/benes.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/bm.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/bm.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/build: script to compile KAT generator
+Additional_Implementations/kem/mceliece8192128/avx/consts13.data: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/consts.S: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/controlbits.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/controlbits.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/crypto_hash.h: .h file (should be automatically generated)
+Additional_Implementations/kem/mceliece8192128/avx/crypto_kem.h: .h file (should be automatically generated)
+Additional_Implementations/kem/mceliece8192128/avx/crypto_kem_mceliece8192128.h: .h file (should be automatically generated)
+Additional_Implementations/kem/mceliece8192128/avx/decrypt.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/decrypt.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/encrypt.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/encrypt.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/fft.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/fft.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/fft_tr.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/fft_tr.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/gf.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/gf.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/KATNUM: number of KATs for this implementation
+Additional_Implementations/kem/mceliece8192128/avx/Makefile: Makefile for KAT generator
+Additional_Implementations/kem/mceliece8192128/avx/nist/kat_kem.c: KAT generator
+Additional_Implementations/kem/mceliece8192128/avx/nist/rng.c: randomness generator for KAT
+Additional_Implementations/kem/mceliece8192128/avx/nist/rng.h: randomness generator for KAT
+Additional_Implementations/kem/mceliece8192128/avx/operations.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/operations.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/params.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/pk_gen.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/pk_gen.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/points13.data: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/powers13.data: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/randombytes.h: hook to randomness for KAT generator
+Additional_Implementations/kem/mceliece8192128/avx/run: script to run KAT generator
+Additional_Implementations/kem/mceliece8192128/avx/scalars13_2x.data: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/scalars13_4x.data: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/sk_gen.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/sk_gen.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/syndrome_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/syndrome_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/transpose_64x128_sp_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/transpose_64x128_sp_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/transpose.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/transpose.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/update_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/update_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/util.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/util.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec128.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec128.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec128_mul_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec128_mul_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec256_ama_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec256_ama_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec256.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec256.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec256_maa_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec256_maa_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec256_mul_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec256_mul_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec_reduce_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/avx/vec_reduce_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/api.h: sizes for this implementation
+Additional_Implementations/kem/mceliece8192128/sse/benes.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/benes.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/bm.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/bm.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/build: script to compile KAT generator
+Additional_Implementations/kem/mceliece8192128/sse/consts13.data: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/consts.S: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/controlbits.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/controlbits.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/crypto_hash.h: .h file (should be automatically generated)
+Additional_Implementations/kem/mceliece8192128/sse/crypto_kem.h: .h file (should be automatically generated)
+Additional_Implementations/kem/mceliece8192128/sse/crypto_kem_mceliece8192128.h: .h file (should be automatically generated)
+Additional_Implementations/kem/mceliece8192128/sse/decrypt.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/decrypt.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/encrypt.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/encrypt.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/fft.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/fft.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/fft_tr.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/fft_tr.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/gf.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/gf.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/KATNUM: number of KATs for this implementation
+Additional_Implementations/kem/mceliece8192128/sse/Makefile: Makefile for KAT generator
+Additional_Implementations/kem/mceliece8192128/sse/nist/kat_kem.c: KAT generator
+Additional_Implementations/kem/mceliece8192128/sse/nist/rng.c: randomness generator for KAT
+Additional_Implementations/kem/mceliece8192128/sse/nist/rng.h: randomness generator for KAT
+Additional_Implementations/kem/mceliece8192128/sse/operations.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/operations.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/params.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/pk_gen.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/pk_gen.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/points13.data: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/powers13.data: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/randombytes.h: hook to randomness for KAT generator
+Additional_Implementations/kem/mceliece8192128/sse/run: script to run KAT generator
+Additional_Implementations/kem/mceliece8192128/sse/scalars13_2x.data: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/scalars13_4x.data: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/sk_gen.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/sk_gen.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/syndrome_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/syndrome_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/transpose_64x128_sp_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/transpose_64x128_sp_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/transpose.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/transpose.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/update_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/update_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/util.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/util.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/vec128.c: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/vec128.h: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/vec128_mul_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/vec128_mul_asm.s: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/vec_reduce_asm.q: part of additional implementation
+Additional_Implementations/kem/mceliece8192128/sse/vec_reduce_asm.s: part of additional implementation
+KAT/kem/mceliece6960119/kat_kem.int: intermediate values for Known Answer Test
+KAT/kem/mceliece6960119/kat_kem.req: input for Known Answer Test
+KAT/kem/mceliece6960119/kat_kem.rsp: output for Known Answer Test
+KAT/kem/mceliece8192128/kat_kem.int: intermediate values for Known Answer Test
+KAT/kem/mceliece8192128/kat_kem.req: input for Known Answer Test
+KAT/kem/mceliece8192128/kat_kem.rsp: output for Known Answer Test
+Optimized_Implementation/kem/mceliece6960119/api.h: sizes for this implementation
+Optimized_Implementation/kem/mceliece6960119/benes.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/benes.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/bm.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/bm.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/build: script to compile KAT generator
+Optimized_Implementation/kem/mceliece6960119/controlbits.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/controlbits.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/crypto_hash.h: .h file (should be automatically generated)
+Optimized_Implementation/kem/mceliece6960119/crypto_kem.h: .h file (should be automatically generated)
+Optimized_Implementation/kem/mceliece6960119/crypto_kem_mceliece6960119.h: .h file (should be automatically generated)
+Optimized_Implementation/kem/mceliece6960119/decrypt.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/decrypt.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/encrypt.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/encrypt.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/gf.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/gf.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/KATNUM: number of KATs for this implementation
+Optimized_Implementation/kem/mceliece6960119/Makefile: Makefile for KAT generator
+Optimized_Implementation/kem/mceliece6960119/nist/kat_kem.c: KAT generator
+Optimized_Implementation/kem/mceliece6960119/nist/rng.c: randomness generator for KAT
+Optimized_Implementation/kem/mceliece6960119/nist/rng.h: randomness generator for KAT
+Optimized_Implementation/kem/mceliece6960119/operations.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/operations.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/params.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/pk_gen.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/pk_gen.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/randombytes.h: hook to randomness for KAT generator
+Optimized_Implementation/kem/mceliece6960119/root.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/root.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/run: script to run KAT generator
+Optimized_Implementation/kem/mceliece6960119/sk_gen.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/sk_gen.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/synd.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/synd.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/THIS_IS_A_COPY_OF_REF: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/transpose.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/transpose.h: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/util.c: part of portable implementation
+Optimized_Implementation/kem/mceliece6960119/util.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/api.h: sizes for this implementation
+Optimized_Implementation/kem/mceliece8192128/benes.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/benes.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/bm.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/bm.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/build: script to compile KAT generator
+Optimized_Implementation/kem/mceliece8192128/controlbits.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/controlbits.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/crypto_hash.h: .h file (should be automatically generated)
+Optimized_Implementation/kem/mceliece8192128/crypto_kem.h: .h file (should be automatically generated)
+Optimized_Implementation/kem/mceliece8192128/crypto_kem_mceliece8192128.h: .h file (should be automatically generated)
+Optimized_Implementation/kem/mceliece8192128/decrypt.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/decrypt.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/encrypt.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/encrypt.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/gf.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/gf.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/KATNUM: number of KATs for this implementation
+Optimized_Implementation/kem/mceliece8192128/Makefile: Makefile for KAT generator
+Optimized_Implementation/kem/mceliece8192128/nist/kat_kem.c: KAT generator
+Optimized_Implementation/kem/mceliece8192128/nist/rng.c: randomness generator for KAT
+Optimized_Implementation/kem/mceliece8192128/nist/rng.h: randomness generator for KAT
+Optimized_Implementation/kem/mceliece8192128/operations.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/operations.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/params.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/pk_gen.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/pk_gen.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/randombytes.h: hook to randomness for KAT generator
+Optimized_Implementation/kem/mceliece8192128/root.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/root.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/run: script to run KAT generator
+Optimized_Implementation/kem/mceliece8192128/sk_gen.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/sk_gen.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/synd.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/synd.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/THIS_IS_A_COPY_OF_REF: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/transpose.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/transpose.h: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/util.c: part of portable implementation
+Optimized_Implementation/kem/mceliece8192128/util.h: part of portable implementation
+README: this file
+Reference_Implementation/kem/mceliece6960119/api.h: sizes for this implementation
+Reference_Implementation/kem/mceliece6960119/benes.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/benes.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/bm.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/bm.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/build: script to compile KAT generator
+Reference_Implementation/kem/mceliece6960119/controlbits.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/controlbits.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/crypto_hash.h: .h file (should be automatically generated)
+Reference_Implementation/kem/mceliece6960119/crypto_kem.h: .h file (should be automatically generated)
+Reference_Implementation/kem/mceliece6960119/crypto_kem_mceliece6960119.h: .h file (should be automatically generated)
+Reference_Implementation/kem/mceliece6960119/decrypt.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/decrypt.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/encrypt.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/encrypt.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/gf.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/gf.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/KATNUM: number of KATs for this implementation
+Reference_Implementation/kem/mceliece6960119/Makefile: Makefile for KAT generator
+Reference_Implementation/kem/mceliece6960119/nist/kat_kem.c: KAT generator
+Reference_Implementation/kem/mceliece6960119/nist/rng.c: randomness generator for KAT
+Reference_Implementation/kem/mceliece6960119/nist/rng.h: randomness generator for KAT
+Reference_Implementation/kem/mceliece6960119/operations.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/operations.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/params.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/pk_gen.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/pk_gen.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/randombytes.h: hook to randomness for KAT generator
+Reference_Implementation/kem/mceliece6960119/root.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/root.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/run: script to run KAT generator
+Reference_Implementation/kem/mceliece6960119/sk_gen.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/sk_gen.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/synd.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/synd.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/transpose.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/transpose.h: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/util.c: part of reference implementation
+Reference_Implementation/kem/mceliece6960119/util.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/api.h: sizes for this implementation
+Reference_Implementation/kem/mceliece8192128/benes.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/benes.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/bm.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/bm.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/build: script to compile KAT generator
+Reference_Implementation/kem/mceliece8192128/controlbits.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/controlbits.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/crypto_hash.h: .h file (should be automatically generated)
+Reference_Implementation/kem/mceliece8192128/crypto_kem.h: .h file (should be automatically generated)
+Reference_Implementation/kem/mceliece8192128/crypto_kem_mceliece8192128.h: .h file (should be automatically generated)
+Reference_Implementation/kem/mceliece8192128/decrypt.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/decrypt.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/encrypt.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/encrypt.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/gf.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/gf.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/KATNUM: number of KATs for this implementation
+Reference_Implementation/kem/mceliece8192128/Makefile: Makefile for KAT generator
+Reference_Implementation/kem/mceliece8192128/nist/kat_kem.c: KAT generator
+Reference_Implementation/kem/mceliece8192128/nist/rng.c: randomness generator for KAT
+Reference_Implementation/kem/mceliece8192128/nist/rng.h: randomness generator for KAT
+Reference_Implementation/kem/mceliece8192128/operations.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/operations.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/params.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/pk_gen.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/pk_gen.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/randombytes.h: hook to randomness for KAT generator
+Reference_Implementation/kem/mceliece8192128/root.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/root.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/run: script to run KAT generator
+Reference_Implementation/kem/mceliece8192128/sk_gen.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/sk_gen.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/synd.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/synd.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/transpose.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/transpose.h: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/util.c: part of reference implementation
+Reference_Implementation/kem/mceliece8192128/util.h: part of reference implementation
+Supporting_Documentation/doc.pdf: main documentation
